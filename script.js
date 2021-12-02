@@ -20,7 +20,10 @@ function primitiveMultiply(a, b) {
 
 function reliableMultiply(a, b) 
 {
-  
+  while (true) 
+  {
+      
+  }
 }
 
 
