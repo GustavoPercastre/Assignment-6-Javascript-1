@@ -22,8 +22,9 @@ function reliableMultiply(a, b)
 {
   while (true) 
   {
-      
+    try 
+    {
+      return primitiveMultiply(a, b);
+    } 
   }
 }
-
-
