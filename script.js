@@ -9,6 +9,7 @@
 // Starting correct way to document Git commits.
 
 class MultiplicatorUnitFailure extends Error {}
+// Created the function MultiplicatorUnitFailure which is the parent to Error.
 
 function primitiveMultiply(a, b) {
   if (Math.random() < 0.2) {
@@ -18,18 +19,19 @@ function primitiveMultiply(a, b) {
   }
 }
 
+// Created the function reliableMultiply which will take to variables (a,b).
 function reliableMultiply(a, b) 
 {
-  while (true) 
+  while (true)// Created a while loop so as long as the statement inside the loop is (true) it will keep runing the loop. 
   {
-    try 
+    try// Added a try tag to return the (a,b) back to primitiveMultiply.
     {
       return primitiveMultiply(a, b);
-    } catch (exception) 
+    } catch (exception)// Added a catch exception inside the while loop so if there is something inside the (a,b) it will do whatever is in the catch.
     {
-      if (!(exception instanceof MultiplicatorUnitFailure)) 
+      if (!(exception instanceof MultiplicatorUnitFailure))// Added an if statement so if there is an exception inside of MultiplicatorUnitFailure.
       {
-        
+        throw exception;
       }
     }
   }
