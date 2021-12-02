@@ -27,7 +27,10 @@ function reliableMultiply(a, b)
       return primitiveMultiply(a, b);
     } catch (exception) 
     {
-      
+      if (!(exception instanceof MultiplicatorUnitFailure)) 
+      {
+        
+      }
     }
   }
 }
